@@ -1,0 +1,78 @@
+// transition
+@mixin transition($option, $time, $style: ease-in-out){
+	-webkit-transition: $option $time $style;
+	   -moz-transition: $option $time $style;
+			transition: $option $time $style; 
+}
+// Box-shadow
+@mixin box-shadow-xybrc($x, $y, $blur, $radius, $color){
+	-webkit-box-shadow: $x $y $blur	$radius $color;
+	   -moz-box-shadow: $x $y $blur	$radius $color;
+			box-shadow: $x $y $blur	$radius $color; 
+}
+
+// border radius
+@mixin border-radius($radius) {
+	 -webkit-border-radius: $radius;
+		-moz-border-radius: $radius;
+		 -ms-border-radius: $radius;
+			 border-radius: $radius;
+}
+// Margin
+@mixin margin-tbrl($mr) {
+	 -webkit-margin: $mr;
+		-moz-margin: $mr;
+		 -ms-margin: $mr;
+			 margin: $mr;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// transform
+@mixin transform($value){
+	-webkit-transform: $value;
+	   -moz-transform: $value;
+	    -ms-transform: $value;
+			transform: $value; 
+}
+
+// all fonts related mixin
+@mixin raleway($value) {
+	font-family: $raleway;
+	font-weight: $value;
+}
+@mixin opensans($value) {
+	font-family: $opensans;
+	font-weight: $value;
+}
+
+
+
+// flexbox center
+@mixin flexbox_center(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+// background opacity
+@mixin background-opacity($color, $opacity: 0.3) {
+    background: $color; /* The Fallback */
+    background: rgba($color, $opacity);
+}

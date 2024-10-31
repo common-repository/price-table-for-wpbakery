@@ -1,0 +1,406 @@
+/*
+|===================================
+|	Default Style
+|===================================
+*/ 
+.tl-price-table {
+    background: $gray;
+    overflow: hidden;
+	@include border-radius(5px);
+	@include transition(all, .3s, ease);
+	&:hover{
+	    .entry-price {
+	    	background-color: $blue;
+	    }
+		box-shadow: 4px 6.928px 50px 0px rgba( 0, 0, 0, .06 );
+		
+	}
+    .entry-price {
+	    background: $fiord;
+	    padding: 50px 0px 40px 0px;
+	    color: $white;
+    	line-height: 24px;
+		.price-area {
+		    position: relative;
+		    .pice_currency {
+			    position: absolute;
+			    top: -10px;
+    			font-size: 16px;
+			}
+			.table_price {
+			    font-size: 48px;
+			    @include margin-tbrl(0px 0px 0px 10px);
+			}
+			.pack_duration{
+				font-size: 14px;
+			}
+		}
+	}
+	.entry-title-bg {
+		h2.entry-title{
+			padding: 40px 0px;
+		    font-size: 30px;
+		    line-height: 24px;
+		    color: #181515;
+		}
+	}
+	.entry-content{
+    	padding: 10px 0px;
+		ul{
+			li{
+			    font-size: 14px;
+			    line-height: 30px;
+			}
+		}
+	}
+	.entry-footer {
+	    padding: 40px 0px;
+		a {
+		    border: 1px solid $border_gray;
+		    padding: 12px 35px;
+		    @include border-radius(50px);
+		    color: $blue;
+		    font-size: 14px;
+		    line-height: 24px;
+		    &:hover{
+				@include transition(all, .3s, ease);
+				background-color:$blue;
+				color: $white;
+		    }
+		}
+	}
+}
+
+/*
+|===================================
+|	Table Three Style
+|===================================
+*/ 
+
+.tl-price-table.three_style {
+    border: 1px solid $gray;
+}
+
+.tl-price-table.style-three{
+	overflow: hidden;
+	.entry-price{
+		padding: 60px 0px 40px 0px;
+		.price-area{
+			margin-bottom: 10px; 
+			i{
+				font-size: 48px;
+			}
+			span{
+				font-size: 48px;
+				font-weight: bold;
+			}
+		}
+		.pack_duration{
+			font-size: 14px;
+			line-height: 24px;
+			color: $bl_gray;
+		}
+	}
+}
+
+
+
+/*
+|===================================
+|	Table Five Style
+|===================================
+*/ 
+.tl-price-table.style-five{
+	.entry-content{
+		ul{
+			li{
+				border-top: 1px solid #e1e1e1;
+			    padding: 10px 0px;
+			    font-size: 14px;
+			    line-height: 25px;
+			}
+			&:last-child{
+				border-bottom:1px solid #e1e1e1;
+			}
+		}
+	}
+}
+
+
+/*
+|===================================
+|	Table Six Style
+|===================================
+*/ 
+.tl-price-table.style-six{
+	.entry-content{
+		ul{
+			li{
+				border-bottom: 1px solid #e1e1e1;
+			    padding: 10px 0px;
+			    font-size: 14px;
+			    line-height: 25px;
+				&:last-child{
+					border-bottom: none;
+				}
+			}
+
+		}
+	}
+}
+
+
+/*
+|===================================
+|	Table Six Style
+|===================================
+*/ 
+.tl-price-table.style-seven{
+    border: 1px solid #ddd;
+    .entry-header{
+    	background-color: #70c599;
+    } 
+	.entry-price{
+		background-color: #70c599;
+		padding: 40px 0px 40px 0px;
+	}
+	.entry-content{
+		padding: 40px 0px 60px 0px;
+	}
+	.entry-footer {
+	    padding: 0px;
+	    margin-top: -15px;
+	}
+	.entry-footer a {
+	    background: $dark;
+	   	border: 1px solid $dark;
+	}
+}
+
+
+
+/*
+|===================================
+|	Table Nine Style
+|===================================
+*/ 
+.tl-price-table.style-nine{
+	background-color: $white;
+	border: 1px solid $gray;
+	.pack_duration_h2 {
+	    background: #efefef;
+	    width: 165px;
+	    margin: auto;
+	    @include border-radius(50%);
+	    padding: 15px 20px 55px 20px;
+	    margin-bottom: -60px;
+		border: 1px solid $wh_gray1;
+	}
+	.entry-header {
+	    border-bottom: 2px solid $wh_gray1;
+	    background: $wh_gray;
+	}
+	.entry-price {
+	    padding: 10px 0px 10px 0px;
+	    background: $wh_gray;
+	    color: #000;
+	    .price-area{
+	    	margin: 0px;
+	    }
+	}
+	.round_bg_footer_area{
+		.pack_duration{
+			h5.pack_duration_h2{
+	    		background: $wh_gray;
+			}
+		}
+	}
+	.entry-footer {
+	    background: $wh_gray;
+	    padding: 10px 0px 60px 0px;
+	}
+}
+
+
+
+/*
+|===================================
+|	Table Ten Style
+|===================================
+*/ 
+.tl-price-table.style-ten{
+	background-color: $d_blue;
+	.entry-header {
+		.entry-title-bg {
+	    background-color: #52a89d;
+	    margin-bottom: -40px;
+	    padding: 20px 0px 40px 0px;
+		}
+		.entry-price {
+		    color: $white;
+		    line-height: 24px;
+		    @include border-radius(50%);
+		    margin: auto;
+		    padding: 20px 60px 80px 60px;
+		    display: inline-block;
+		    background: $d_blue;
+		    .table_price {
+			    font-size: 32px;
+			}
+		    .pack_duration {
+			    h5{
+			    	color:$white;
+			    }
+			}
+		}
+	}
+	.entry-content{
+    	margin-top: -50px;
+		ul{
+			li{
+				color:$white;
+			}
+
+		}
+	}
+	.entry-footer{
+		span{
+			color:$white;
+		}
+	}
+
+}
+
+
+
+/*
+|===================================
+|	Table Eleven Style
+|===================================
+*/ 
+.tl-price-table.style-eleven{
+	background-color: $d_blue;
+	.entry-header {
+		padding: 60px 0px 0px 0px;
+		.entry-price {
+		    color: $white;
+		    line-height: 24px;
+		    border: 10px solid $dark_gray;
+		    @include border-radius(50%);
+		    margin: auto;
+		    padding: 35px 27.2px;
+		    display: inline-block;
+		    background: #44505d;
+		    .table_price {
+			    font-size: 32px;
+			}
+		    .pack_duration {
+			    h5{
+			    	color:$white;
+			    }
+			}
+		}
+	}
+	.entry-content{
+		ul{
+			li{
+				color: $white;
+			}
+		}
+	}
+	.entry-footer {
+		a{
+			color: $dark;
+			&:hover {
+			    background-color: $dark_gray;
+			}
+			span{
+				color:$white;
+			}
+		}
+	}
+	h2.entry-title {
+		    padding: 40px 0px;
+		    font-size: 32px;
+		    line-height: 24px;
+		    color: $white;
+	}
+}
+
+
+/*
+|===================================
+|	Table Twelve Style
+|===================================
+*/ 
+.tl-price-table.style-twelve{
+	background-color: $d_blue;
+	.entry-header {
+		.entry-price {
+		    color: $white;
+		    line-height: 24px;
+		    border: 10px solid $dark_gray;
+		    @include border-radius(50%);
+		    margin: auto;
+		    padding: 29px 22.9px;
+		    display: inline-block;
+		    background: $d_blue1;
+		    position: relative;
+			.entry-qote{
+				&:before {
+				    content: "\f10d";
+				    font-family: FontAwesome;
+				    position: absolute;
+				    font-size: 20px;
+				    color: #c1c9cc;
+				    top: 0px;
+				    left: -20px;
+				}
+				&:after {
+				    content: "\f10e";
+				    font-family: FontAwesome;
+				    position: absolute;
+				    font-size: 20px;
+				    color: #c1c9cc;
+				    top: 0px;
+				    right: -20px;
+				}
+				.table_price {
+				    font-size: 32px;
+				}
+			}
+		    .price-area {
+			    font-size: 32px;
+			}
+		    .pack_duration {
+			    h5{
+			    	color:$white;
+			    }
+			}
+		}
+	}
+	.entry-content{
+		ul{
+			li{
+				color: $white;
+			}
+		}
+	}
+	.entry-footer {
+		a{
+			color: $dark;
+			&:hover {
+			    background-color: $dark_gray;
+			}
+			span{
+				color:$white;
+			}
+		}
+	}
+	h2.entry-title {
+		    padding: 40px 0px;
+		    font-size: 32px;
+		    line-height: 24px;
+		    color: $white;
+	}
+}
